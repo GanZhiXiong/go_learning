@@ -37,7 +37,7 @@
 
 [11《Go语言入门》数组和切片](https://blog.csdn.net/oHaiKuoTianKong1682/article/details/112794608)
 
-[]()
+[12《Go语言入门》Map声明、添加删除访问元素、遍历及排序](https://blog.csdn.net/oHaiKuoTianKong1682/article/details/112919456)
 
 []()
 
