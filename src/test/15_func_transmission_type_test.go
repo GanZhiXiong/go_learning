@@ -44,6 +44,12 @@ func modifySlice(originalValue, newValue []string, t *testing.T) {
 	t.Logf("%p %p", &originalValue, &newValue)
 }
 
+func modifySliceByPtr(originalValue, newValue *[]string, t *testing.T) {
+	t.Logf("%p %p", &originalValue, &newValue)
+	*originalValue = []string{"b"}
+	t.Logf("%p %p", &originalValue, &newValue)
+}
+
 func TestModifySlice(t *testing.T) {
 	originalValue, newValue := []string{"a"}, []string{"b"}
 	t.Log(originalValue, newValue)
@@ -52,6 +58,10 @@ func TestModifySlice(t *testing.T) {
 	modifySlice(originalValue, newValue, t)
 	t.Log(originalValue, newValue)
 	t.Logf("%p %p", &originalValue, &newValue)
+
+	modifySliceByPtr(&originalValue, &newValue, t)
+	t.Log(originalValue)
+	t.Logf("%p", &originalValue)
 }
 
 func modifyDigitalByPtr(originalValue *int, newValue *int, t *testing.T) {
