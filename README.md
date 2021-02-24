@@ -45,7 +45,7 @@
 
 [15《Go语言入门》函数及函数式编程](https://blog.csdn.net/oHaiKuoTianKong1682/article/details/113370674)
 
-[]()
+[16《Go语言入门》函数可变参数和defer](https://blog.csdn.net/oHaiKuoTianKong1682/article/details/114024422)
 
 []()
 
