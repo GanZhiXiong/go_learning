@@ -47,6 +47,6 @@
 
 [16《Go语言入门》函数可变参数和defer](https://blog.csdn.net/oHaiKuoTianKong1682/article/details/114024422)
 
-[]()
+[17《Go语言入门》面向对象和结构体](https://blog.csdn.net/oHaiKuoTianKong1682/article/details/114064741)
 
 []()
