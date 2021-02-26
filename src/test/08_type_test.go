@@ -8,6 +8,7 @@ import (
 	"testing"
 )
 
+// 使用关键字 type 可以将各种基本类型定义为自定义类型，基本类型包括整型、字符串、布尔等。
 type MyInt int64
 
 func TestImplicit(t *testing.T) {
