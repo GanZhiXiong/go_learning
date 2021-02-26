@@ -49,4 +49,4 @@
 
 [17《Go语言入门》面向对象和结构体](https://blog.csdn.net/oHaiKuoTianKong1682/article/details/114064741)
 
-[]()
+[18《Go语言入门》非侵入式接口（interface）](https://blog.csdn.net/oHaiKuoTianKong1682/article/details/114124048)
