@@ -48,9 +48,16 @@ func TestReturnMultiValues(t *testing.T) {
 	t.Log(c)
 }
 
+// 使用关键字 type 可以将各种基本类型定义为自定义类型，基本类型包括整型、字符串、布尔等。
+type MyFunc func(op int)int
+
 // 参数和返回值可以使函数
-func timeSpent(inner func(op int) int) func(op int) int {
+func timeSpent(inner MyFunc) MyFunc {
+// 和上面代码一样的
+//func timeSpent(inner func(op int) int) func(op int) int {
 	// 变量可以是函数
+	// 下面代码会报错，因为函数定义是必须按照函数签名展开的
+	//fun := MyFunc {
 	fun := func(op int) int {
 		start := time.Now()
 		ret := inner(op)
