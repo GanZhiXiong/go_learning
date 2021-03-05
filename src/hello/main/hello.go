@@ -10,7 +10,11 @@ import (
 
 // 程序入口，功能实现
 func main() {
-	fmt.Println(os.Args)
+	//x := 200
+	//var any interface{} = x
+	//fmt.Println(any)
+	//return
+
 	if len(os.Args) > 1 {
 		fmt.Println("Args[1]: ", os.Args[1])
 	}
