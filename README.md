@@ -60,6 +60,7 @@
 [22 - 类型断言](https://blog.csdn.net/oHaiKuoTianKong1682/article/details/114371559)
 
 [23 - 进程、线程、协程](https://blog.csdn.net/oHaiKuoTianKong1682/article/details/114409189?spm=1001.2014.3001.5501)
-[]()
+
+[24 - 并发编程goroutine](https://blog.csdn.net/oHaiKuoTianKong1682/article/details/114442646?spm=1001.2014.3001.5501)
 []()
 []()
