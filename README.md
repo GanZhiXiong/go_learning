@@ -55,9 +55,9 @@
 
 [20 - interface和nil](https://blog.csdn.net/oHaiKuoTianKong1682/article/details/114242650)
 
-[21《Go语言入门》interface底层浅分析](https://blog.csdn.net/oHaiKuoTianKong1682/article/details/114337266)
+[21 - interface底层浅分析](https://blog.csdn.net/oHaiKuoTianKong1682/article/details/114337266)
 
-[22《Go语言入门》类型断言](https://blog.csdn.net/oHaiKuoTianKong1682/article/details/114371559)
+[22 - 类型断言](https://blog.csdn.net/oHaiKuoTianKong1682/article/details/114371559)
 
 []()
 []()
