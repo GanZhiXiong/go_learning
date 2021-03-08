@@ -64,4 +64,5 @@
 [24 - 并发编程goroutine](https://blog.csdn.net/oHaiKuoTianKong1682/article/details/114442646?spm=1001.2014.3001.5501)
 
 [25 - 并发和并行](https://blog.csdn.net/oHaiKuoTianKong1682/article/details/114459719?spm=1001.2014.3001.5501)
-[]()
+
+[26 - 并发编程chan — goroutine之间通信的管道](https://blog.csdn.net/oHaiKuoTianKong1682/article/details/114496281?spm=1001.2014.3001.5501)
