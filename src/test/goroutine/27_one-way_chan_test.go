@@ -82,3 +82,23 @@ func TestChanClose2(t *testing.T) {
 		fmt.Println(v)
 	}
 }
+
+func TestChanClose3(t *testing.T) {
+	ch := make(chan int, 10)
+	ch <- 1
+	ch <- 2
+	ch <- 3
+
+	close(ch)
+	close(ch)
+
+	for v := range ch {
+		fmt.Println(v)
+	}
+}
+
+func TestChanClose4(t *testing.T) {
+	var ch chan int
+	t.Log(ch)
+	close(ch)
+}
