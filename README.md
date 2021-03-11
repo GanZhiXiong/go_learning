@@ -70,3 +70,5 @@
 [27 - 单向通道（chan）](https://blog.csdn.net/oHaiKuoTianKong1682/article/details/114586381)
 
 [28 - 无缓冲通道](https://blog.csdn.net/oHaiKuoTianKong1682/article/details/114636996)
+
+[29 - 带缓冲通道](https://blog.csdn.net/oHaiKuoTianKong1682/article/details/114672316)
