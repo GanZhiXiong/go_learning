@@ -1,4 +1,4 @@
-package goroutine
+package goroutine_channel
 
 import (
 	"testing"
@@ -17,6 +17,7 @@ func TestChan(t *testing.T) {
 	t.Log(ch3)
 }
 
+// fatal error: all goroutines are asleep - deadlock!
 func TestChan1(t *testing.T) {
 	ch := make(chan interface{})
 	ch <- 0
