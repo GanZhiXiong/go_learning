@@ -74,3 +74,5 @@
 [29 - 带缓冲通道](https://blog.csdn.net/oHaiKuoTianKong1682/article/details/114672316)
 
 [30 - select和channel](https://blog.csdn.net/oHaiKuoTianKong1682/article/details/114691050)
+
+[31 - 共享变量的并发（互斥锁）](https://blog.csdn.net/oHaiKuoTianKong1682/article/details/114707671)
