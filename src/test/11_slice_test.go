@@ -1,8 +1,10 @@
 package test
 
 import (
+	"color"
 	"reflect"
 	"testing"
+	"unsafe"
 )
 
 func TestSliceInit(t *testing.T) {
@@ -48,10 +50,68 @@ func TestSliceCapGrowthRules(t *testing.T) {
 	s := make([]int, 0)
 	n := 0
 	for n < 1500 {
-		t.Log(len(s), cap(s))
 		s = append(s, n)
+
+		t.Log(color.White, len(s), cap(s))
+		if len(s)+1 > cap(s) {
+			t.Log(color.Red, "下一个append将扩容")
+		}
+
 		n++
 	}
+}
+
+func TestSliceCapGrowthRules1(t *testing.T) {
+	var i int32
+	t.Log(unsafe.Sizeof(i))
+
+	s := []int32{1, 2}
+	t.Log(len(s), cap(s))
+
+	s = append(s, 3, 4, 5)
+	t.Log(len(s), cap(s))
+}
+
+func TestSliceCapGrowthRules2(t *testing.T) {
+	var i int64
+	t.Log(unsafe.Sizeof(i))
+
+	s := []int64{1, 2}
+	t.Log(len(s), cap(s))
+
+	s = append(s, 3, 4, 5)
+	t.Log(len(s), cap(s))
+
+	s = append(s, 6)
+	t.Log(len(s), cap(s))
+
+	s = append(s, 7)
+	t.Log(len(s), cap(s))
+}
+
+func TestSliceCapGrowthRules3(t *testing.T) {
+	var i int
+	t.Log(unsafe.Sizeof(i))
+
+	a := make([]int, 20)
+	t.Log(len(a), cap(a))
+
+	b := make([]int, 42)
+	t.Log(len(b), cap(b))
+
+	a = append(a, b...)
+	t.Log(len(a), cap(a))
+}
+
+func TestSliceCapGrowthRules4(t *testing.T) {
+	var s string
+	t.Log(unsafe.Sizeof(s))
+
+	a := []string{"My", "name", "is"}
+	t.Log(len(a), cap(a))
+
+	a = append(a, "jason")
+	t.Log(len(a), cap(a))
 }
 
 func TestSliceShareMemory(t *testing.T) {
@@ -61,7 +121,7 @@ func TestSliceShareMemory(t *testing.T) {
 	summer := year[4:7]
 	// 为什么summer的capacity是8呢？
 	// 虽然截取到索引6为止，但是summer是指向连续的存储空间year，也就是从year索引4开始到year最后一个元素的这一段连续空间
-	// 也就是从Jun到Dec，总共8个，capacity也就是8。
+	// 也就是从May到Dec，总共8个，capacity也就是8。
 	// 如果还觉得很绕，可以先这样记，后面我也会讲到，到时候进一步消化。
 	t.Log(summer, len(summer), cap(summer)) // [May Jun Jul] 3 8
 

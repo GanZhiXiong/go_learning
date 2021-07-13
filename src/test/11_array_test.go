@@ -9,7 +9,7 @@ func TestArrayInit(t *testing.T) {
 	var a [3]int
 	t.Log(a)
 	a[0] = 1
-	t.Log(a)
+	t.Log(a, reflect.TypeOf(a))
 
 	// 一维数组
 	b := [3]int{1, 2, 3}
@@ -54,7 +54,13 @@ func TestArraySection(t *testing.T) {
 	// 数组截取：a[开始索引(包含), 不包含(不包含)]
 	b := a[1:2]
 	t.Log(b, reflect.TypeOf(b)) // 2
-	t.Log(a[1:3]) // 2 3
-	t.Log(a[1:]) // 2 3 4 5
+	t.Log(b, len(b), cap(b))
+
+	t.Log(a[1:3], reflect.TypeOf(a[1:3])) // 2 3
+	//t.Log(a[1:]) // 2 3 4 5
+
+	c := a[3:]
+	t.Log(c, len(c), cap(c))
+
 	t.Log(a[:3]) // 1 2 3
 }

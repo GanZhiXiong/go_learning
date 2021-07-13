@@ -10,7 +10,7 @@ func TestIncrementDecrement(t *testing.T) {
 	t.Log(a)
 
 	b := 1
-	b++
+	b--
 	// '--' unexpected
 	//--b
 	t.Log(b)
